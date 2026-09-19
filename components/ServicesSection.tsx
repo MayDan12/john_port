@@ -1,12 +1,15 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Sparkles, ArrowUpRight } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { DESIGNER } from "@/data/designer";
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <section
+      id="services"
+      className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20"
+    >
       <div className="flex flex-col gap-4 mb-16">
         <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-purple-600 dark:text-purple-400 uppercase">
           <Sparkles className="w-3.5 h-3.5" /> Capabilities
@@ -15,7 +18,8 @@ export default function ServicesSection() {
           Services & Expertise
         </h2>
         <p className="text-base text-zinc-600 dark:text-zinc-400 max-w-xl">
-          Comprehensive design capabilities tailored for modern tech startups, luxury lifestyle brands, and digital platforms.
+          Comprehensive design capabilities tailored for modern tech startups,
+          luxury lifestyle brands, and digital platforms.
         </p>
       </div>
 

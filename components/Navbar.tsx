@@ -42,7 +42,7 @@ export default function Navbar() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 sm:px-8 py-4",
           scrolled
             ? "glass-nav shadow-sm border-b border-zinc-200/50 dark:border-zinc-800/50 py-3"
-            : "bg-transparent"
+            : "bg-transparent",
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -71,7 +71,7 @@ export default function Navbar() {
                     "px-3.5 py-1.5 text-xs font-medium rounded-full transition-all duration-200 relative",
                     isActive
                       ? "text-zinc-950 dark:text-white font-semibold"
-                      : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white"
+                      : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white",
                   )}
                 >
                   {link.name}
@@ -86,7 +86,7 @@ export default function Navbar() {
               href="/#contact"
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-medium rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 hover:bg-purple-600 dark:hover:bg-purple-400 dark:hover:text-zinc-950 transition-all shadow-sm hover:shadow-purple-500/20"
             >
-              <span>Let's Work Together</span>
+              <span>Let&apos;s Work Together</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
 
@@ -96,7 +96,11 @@ export default function Navbar() {
               className="md:hidden p-2 rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800"
               aria-label="Toggle mobile menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -117,7 +121,9 @@ export default function Navbar() {
                 <span className="text-xs font-mono text-purple-400 uppercase tracking-widest flex items-center gap-2">
                   <Sparkles className="w-3.5 h-3.5" /> Navigation
                 </span>
-                <span className="text-xs text-zinc-500">{DESIGNER.availability}</span>
+                <span className="text-xs text-zinc-500">
+                  {DESIGNER.availability}
+                </span>
               </div>
               <nav className="flex flex-col gap-4">
                 {NAV_LINKS.map((link) => (
@@ -139,7 +145,7 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full py-3.5 text-center text-sm font-semibold rounded-full bg-purple-600 text-white hover:bg-purple-500 transition-colors shadow-lg shadow-purple-600/30 flex items-center justify-center gap-2"
               >
-                <span>Let's Work Together</span>
+                <span>Let&apos;s Work Together</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
               <div className="text-center text-xs text-zinc-500 font-mono">

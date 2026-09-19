@@ -15,7 +15,8 @@ export default function TestimonialsSection() {
           Client Words & Impact
         </h2>
         <p className="text-base text-zinc-600 dark:text-zinc-400 max-w-xl">
-          What founders, product managers, and creative directors say about our collaboration.
+          What founders, product managers, and creative directors say about our
+          collaboration.
         </p>
       </div>
 
@@ -37,14 +38,18 @@ export default function TestimonialsSection() {
               </div>
               <Quote className="w-8 h-8 text-purple-600/30 dark:text-purple-400/30" />
               <p className="text-base text-zinc-800 dark:text-zinc-200 italic leading-relaxed font-serif">
-                "{item.quote}"
+                &ldquo;{item.quote}&rdquo;
               </p>
             </div>
 
             <div className="pt-6 mt-6 border-t border-zinc-200/60 dark:border-zinc-800/60 flex items-center justify-between">
               <div>
-                <p className="text-sm font-bold text-zinc-950 dark:text-white">{item.author}</p>
-                <p className="text-xs text-zinc-500 font-mono">{item.role}, {item.company}</p>
+                <p className="text-sm font-bold text-zinc-950 dark:text-white">
+                  {item.author}
+                </p>
+                <p className="text-xs text-zinc-500 font-mono">
+                  {item.role}, {item.company}
+                </p>
               </div>
             </div>
           </motion.div>

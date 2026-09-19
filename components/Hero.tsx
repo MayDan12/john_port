@@ -2,7 +2,13 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import { ArrowDown, ArrowUpRight, Sparkles, Layers, Compass } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowUpRight,
+  Sparkles,
+  Layers,
+  Compass,
+} from "lucide-react";
 import { DESIGNER } from "@/data/designer";
 
 export default function Hero() {
@@ -73,7 +79,7 @@ export default function Hero() {
             href="/#contact"
             className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 font-medium text-sm hover:bg-zinc-200 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 transition-all flex items-center justify-center gap-2"
           >
-            <span>Let's Work Together</span>
+            <span>Let&apos;s Work Together</span>
             <ArrowUpRight className="w-4 h-4" />
           </Link>
         </motion.div>

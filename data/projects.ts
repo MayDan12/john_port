@@ -21,7 +21,7 @@ export interface Project {
   id: string;
   title: string;
   slug: string;
-  category: 'UI/UX' | 'Branding' | 'Graphic Design' | 'Web Design' | 'Art Direction' | 'Social Media';
+  category: 'Social Media' | 'Branding' | 'Graphic Design' | 'Art Direction' | 'UI/UX' | 'Web Design';
   allCategories: string[];
   year: string;
   client: string;
@@ -34,280 +34,718 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: 'aura-finance',
-    title: 'Aura Finance',
-    slug: 'aura-finance',
-    category: 'UI/UX',
-    allCategories: ['UI/UX', 'Branding'],
-    year: '2026',
-    client: 'Aura Financial Technologies',
-    description: 'Next-generation intelligent wealth management platform designed for modern investors seeking visual clarity and effortless portfolio automation.',
-    services: ['UI/UX Design', 'Branding', 'Design System', 'Prototyping'],
-    coverImage: '/projects/aura-cover.jpg',
-    featured: true,
-    caseStudy: {
-      overview: 'Aura Finance set out to revolutionize retail wealth management with a mobile-first platform that demystifies complex financial analytics into elegant, human-centered insights.',
-      challenge: 'Legacy investment applications overwhelm users with dense data tables, confusing navigation, and aggressive color schemes. Aura needed a soothing, trustworthy, yet futuristic visual identity and mobile interface.',
-      approach: 'We developed a translucent glassmorphism aesthetic centered on dark violet gradients and tactile micro-interactions. Every chart component was custom-designed for glanceability, using color-coded nodes rather than cluttered line graphs.',
-      designSystem: {
-        colors: [
-          { hex: '#7C3AED', name: 'Electric Purple' },
-          { hex: '#4C1D95', name: 'Deep Ultraviolet' },
-          { hex: '#A78BFA', name: 'Soft Iris' },
-          { hex: '#09090B', name: 'Obsidian' }
+    "id": "alime-media-social",
+    "title": "A’Lime Media Social Media Campaign",
+    "slug": "alime-media-social",
+    "category": "Social Media",
+    "allCategories": [
+      "Social Media",
+      "Graphic Design"
+    ],
+    "year": "2025",
+    "client": "A’Lime Media Limited",
+    "description": "High-impact social media creatives, editorial carousels, and visual communication assets designed for A’Lime Media Limited.",
+    "services": [
+      "Social Media Design",
+      "Visual Storytelling",
+      "Brand Collateral",
+      "Content Strategy"
+    ],
+    "coverImage": "https://i.imgur.com/TbD2p7e.jpg",
+    "featured": true,
+    "caseStudy": {
+      "overview": "A’Lime Media Limited engaged us to establish a distinguished, modern social media presence that elevates their media initiatives, captures attention in fast-paced feeds, and communicates brand authority.",
+      "challenge": "Creating visual consistency across dozens of content themes while cutting through digital noise on platforms like Instagram and LinkedIn. The designs needed to convey both high intellectual value and instant visual punch.",
+      "approach": "We devised a modular social graphics system anchored by sharp typography hierarchy, bold chromatic contrasts, and intuitive carousel slide structures that maximize audience engagement and retention.",
+      "designSystem": {
+        "colors": [
+          {
+            "hex": "#1E1B4B",
+            "name": "Deep Midnight Indigo"
+          },
+          {
+            "hex": "#7C3AED",
+            "name": "Electric Violet"
+          },
+          {
+            "hex": "#F43F5E",
+            "name": "Vibrant Coral"
+          },
+          {
+            "hex": "#F8FAFC",
+            "name": "Pure White"
+          }
         ],
-        typography: {
-          fontName: 'Geist Sans & Inter',
-          usage: 'Precision typography with custom numerical tabular fonts for real-time financial tracking.'
+        "typography": {
+          "fontName": "Outfit & Inter",
+          "usage": "High-impact display headlines paired with legible informational subheadings for rapid feed scanning."
         },
-        highlights: [
-          'Adaptive Glassmorphic Cards',
-          'Tactile Haptic-inspired UI Elements',
-          'Biometric Quick-Action Bar'
+        "highlights": [
+          "Modular Carousel Frameworks",
+          "Dynamic Engagement Callouts",
+          "Consistent Brand Palette & Visual Rhythm"
         ]
       },
-      outcome: 'Aura Finance achieved a 140% surge in daily active mobile user engagement within 60 days of launch and received an Apple Design Award nomination in Fintech Innovation.',
-      gallery: [
+      "outcome": "Delivered 30 polished campaign assets driving an increase in organic engagement, high bookmark and share rates, and an instantly recognizable digital brand presence.",
+      "gallery": [
         {
-          src: '/projects/aura-cover.jpg',
-          caption: 'Primary Dashboard Mobile Interface with Glassmorphic Widgets',
-          layout: 'full'
+          "src": "https://i.imgur.com/TbD2p7e.jpg",
+          "caption": "A’Lime Media — Creative #01",
+          "layout": "half"
         },
         {
-          src: '/projects/lume-cover.jpg',
-          caption: 'Real-time portfolio pulse & dark mode variant controls',
-          layout: 'half'
+          "src": "https://i.imgur.com/QErWSJK.jpg",
+          "caption": "A’Lime Media — Creative #02",
+          "layout": "third"
         },
         {
-          src: '/projects/vanta-cover.jpg',
-          caption: 'Component library & custom typography system',
-          layout: 'half'
+          "src": "https://i.imgur.com/EseRZ2L.jpg",
+          "caption": "A’Lime Media — Creative #03",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/qYPxGWd.jpg",
+          "caption": "A’Lime Media — Creative #04",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/y2mNy40.jpg",
+          "caption": "A’Lime Media — Creative #05",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/h26kXBx.jpg",
+          "caption": "A’Lime Media — Creative #06",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/DGjXxQc.jpg",
+          "caption": "A’Lime Media — Creative #07",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/c5nHs3G.jpg",
+          "caption": "A’Lime Media — Creative #08",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/EIQzG8x.jpg",
+          "caption": "A’Lime Media — Creative #09",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/ip8jrgx.jpg",
+          "caption": "A’Lime Media — Creative #10",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/OXeE9f0.jpg",
+          "caption": "A’Lime Media — Creative #11",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/UfOX1qs.jpg",
+          "caption": "A’Lime Media — Creative #12",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/kh6k4Xg.jpg",
+          "caption": "A’Lime Media — Creative #13",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/ek6Hjny.jpg",
+          "caption": "A’Lime Media — Creative #14",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/a0zY0s4.jpg",
+          "caption": "A’Lime Media — Creative #15",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/ufi0zVa.jpg",
+          "caption": "A’Lime Media — Creative #16",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/tVxrgxb.jpg",
+          "caption": "A’Lime Media — Creative #17",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/qgowRps.jpg",
+          "caption": "A’Lime Media — Creative #18",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/PsC91ts.jpg",
+          "caption": "A’Lime Media — Creative #19",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/l5yTrfg.jpg",
+          "caption": "A’Lime Media — Creative #20",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/DYtfYmD.jpg",
+          "caption": "A’Lime Media — Creative #21",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/opdZdSa.jpg",
+          "caption": "A’Lime Media — Creative #22",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/VRdvR5J.jpg",
+          "caption": "A’Lime Media — Creative #23",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/dFbqhn8.jpg",
+          "caption": "A’Lime Media — Creative #24",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/TUThkIH.jpg",
+          "caption": "A’Lime Media — Creative #25",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/Ipz6xHS.jpg",
+          "caption": "A’Lime Media — Creative #26",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/nZPMEBX.jpg",
+          "caption": "A’Lime Media — Creative #27",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/uHzOdmC.jpg",
+          "caption": "A’Lime Media — Creative #28",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/NhcIRkW.jpg",
+          "caption": "A’Lime Media — Creative #29",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/bLUOuy3.jpg",
+          "caption": "A’Lime Media — Creative #30",
+          "layout": "third"
         }
       ]
     }
   },
   {
-    id: 'noma',
-    title: 'Noma',
-    slug: 'noma',
-    category: 'Branding',
-    allCategories: ['Branding', 'Art Direction'],
-    year: '2026',
-    client: 'Noma Living Studio',
-    description: 'Minimal luxury brand identity and collateral design for an architectural lifestyle and interior design studio.',
-    services: ['Brand Identity', 'Art Direction', 'Print & Packaging', 'Guidelines'],
-    coverImage: '/projects/noma-cover.jpg',
-    featured: true,
-    caseStudy: {
-      overview: 'Noma crafts sustainable architectural spaces across Europe. They required an ultra-refined visual language that reflects their minimalist philosophy and spatial elegance.',
-      challenge: 'Connecting raw textural architectural materials with high-end print collateral and digital touchpoints without appearing overly austere.',
-      approach: 'We created a bespoke serif wordmark paired with blind debossed tactile stationery on heavyweight linen paper stock, paired with soft lavender and deep charcoal brand accents.',
-      designSystem: {
-        colors: [
-          { hex: '#1C1917', name: 'Charcoal Black' },
-          { hex: '#A78BFA', name: 'Studio Violet' },
-          { hex: '#F5F5F4', name: 'Linen White' },
-          { hex: '#44403C', name: 'Raw Basalt' }
+    "id": "alime-impact-social",
+    "title": "A’Lime Impact Partnership Social Advocacy",
+    "slug": "alime-impact-social",
+    "category": "Social Media",
+    "allCategories": [
+      "Social Media",
+      "Graphic Design",
+      "Art Direction"
+    ],
+    "year": "2025",
+    "client": "A’Lime Media Impact Partnership",
+    "description": "Advocacy-driven social media design, educational carousel decks, and impact storytelling for A’Lime Media Impact Partnership.",
+    "services": [
+      "Advocacy Graphics",
+      "Social Media Design",
+      "Data Visualization",
+      "Community Storytelling"
+    ],
+    "coverImage": "https://i.imgur.com/X2kKFJS.jpg",
+    "featured": true,
+    "caseStudy": {
+      "overview": "A’Lime Media Impact Partnership works across critical development, sustainability, and societal empowerment issues. They required compelling visual communication to distill multifaceted social challenges into accessible, shareable social media narratives.",
+      "challenge": "Communicating serious social causes, human stories, and data-dense policy information without overwhelming audiences or diminishing the emotional gravity of the causes.",
+      "approach": "We created an empathetic yet visually energetic design system featuring clear data callouts, impactful quotes, harmonious color blocking, and sequential storytelling formats that educate and inspire action.",
+      "designSystem": {
+        "colors": [
+          {
+            "hex": "#065F46",
+            "name": "Emerald Impact"
+          },
+          {
+            "hex": "#0D9488",
+            "name": "Deep Teal"
+          },
+          {
+            "hex": "#F59E0B",
+            "name": "Warm Ochre"
+          },
+          {
+            "hex": "#0F172A",
+            "name": "Deep Slate"
+          }
         ],
-        typography: {
-          fontName: 'Custom Serif & Editorial Grotesk',
-          usage: 'High contrast display serif titles with airy body prose.'
+        "typography": {
+          "fontName": "Outfit & Inter",
+          "usage": "Thoughtful, empathetic typographic scale crafted for educational and advocacy readability."
         },
-        highlights: [
-          'Embossed Physical Packaging',
-          'Monochrome Identity Manual',
-          'Architectural Spatial Signage'
+        "highlights": [
+          "Actionable Cause Callouts",
+          "Structured Infographic Slides",
+          "Community Narrative Spotlights"
         ]
       },
-      outcome: 'Noma expanded into 3 new European capitals with a cohesive brand identity featured in Wallpaper* and Architectural Digest.',
-      gallery: [
+      "outcome": "Created a versatile 33-asset creative library that expanded cross-platform awareness, sparked community dialogue, and strengthened partner engagement across social channels.",
+      "gallery": [
         {
-          src: '/projects/noma-cover.jpg',
-          caption: 'Stationery and physical print collateral suite',
-          layout: 'full'
+          "src": "https://i.imgur.com/X2kKFJS.jpg",
+          "caption": "A’Lime Impact — Creative #01",
+          "layout": "half"
         },
         {
-          src: '/projects/mono-cover.jpg',
-          caption: 'Art Direction poster series and gallery exhibition collateral',
-          layout: 'full'
+          "src": "https://i.imgur.com/YzinZZT.jpg",
+          "caption": "A’Lime Impact — Creative #02",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/F776PAL.jpg",
+          "caption": "A’Lime Impact — Creative #03",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/GKfryX6.jpg",
+          "caption": "A’Lime Impact — Creative #04",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/hg0z5wk.jpg",
+          "caption": "A’Lime Impact — Creative #05",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/KhIXnuo.jpg",
+          "caption": "A’Lime Impact — Creative #06",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/OSGDMrX.jpg",
+          "caption": "A’Lime Impact — Creative #07",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/KRL90fA.jpg",
+          "caption": "A’Lime Impact — Creative #08",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/RQNPFeh.jpg",
+          "caption": "A’Lime Impact — Creative #09",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/DsuyLV0.jpg",
+          "caption": "A’Lime Impact — Creative #10",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/JEDwmMS.jpg",
+          "caption": "A’Lime Impact — Creative #11",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/WbCUSTu.jpg",
+          "caption": "A’Lime Impact — Creative #12",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/DKINhQ1.jpg",
+          "caption": "A’Lime Impact — Creative #13",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/riobc3v.jpg",
+          "caption": "A’Lime Impact — Creative #14",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/PwwkDQY.jpg",
+          "caption": "A’Lime Impact — Creative #15",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/Xd2KK1q.jpg",
+          "caption": "A’Lime Impact — Creative #16",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/1TGCC8F.jpg",
+          "caption": "A’Lime Impact — Creative #17",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/K6av9n7.jpg",
+          "caption": "A’Lime Impact — Creative #18",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/obJpgUH.jpg",
+          "caption": "A’Lime Impact — Creative #19",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/vMGCg7W.jpg",
+          "caption": "A’Lime Impact — Creative #20",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/7UbJyr4.jpg",
+          "caption": "A’Lime Impact — Creative #21",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/rBAL5zB.jpg",
+          "caption": "A’Lime Impact — Creative #22",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/YQQKuJD.jpg",
+          "caption": "A’Lime Impact — Creative #23",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/KxJ6XlJ.jpg",
+          "caption": "A’Lime Impact — Creative #24",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/oow473u.jpg",
+          "caption": "A’Lime Impact — Creative #25",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/SSKStjf.jpg",
+          "caption": "A’Lime Impact — Creative #26",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/TTaUy2c.jpg",
+          "caption": "A’Lime Impact — Creative #27",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/jfWlz3F.jpg",
+          "caption": "A’Lime Impact — Creative #28",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/pTHEKBE.jpg",
+          "caption": "A’Lime Impact — Creative #29",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/e4HgzY6.jpg",
+          "caption": "A’Lime Impact — Creative #30",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/2qEEZWM.jpg",
+          "caption": "A’Lime Impact — Creative #31",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/jRFhjpH.jpg",
+          "caption": "A’Lime Impact — Creative #32",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/DKcdjVM.jpg",
+          "caption": "A’Lime Impact — Creative #33",
+          "layout": "third"
         }
       ]
     }
   },
   {
-    id: 'lume',
-    title: 'Lume',
-    slug: 'lume',
-    category: 'UI/UX',
-    allCategories: ['UI/UX', 'Web Design'],
-    year: '2025',
-    client: 'Lume Smart Home Systems',
-    description: 'Next-gen ambient smart home automation iOS app and hardware companion UI system.',
-    services: ['Product Design', 'UI/UX', 'Design System', 'Iconography'],
-    coverImage: '/projects/lume-cover.jpg',
-    featured: true,
-    caseStudy: {
-      overview: 'Lume connects IoT smart home hardware into an intuitive, touch-friendly control center built for effortless daily living.',
-      challenge: 'Balancing hundreds of smart device states (lighting, climate, security, audio) into a frictionless single-screen controller.',
-      approach: 'We architected a dynamic spatial layout using glowing neon purple indicator states against dark obsidian backdrops, giving users immediate sensory confirmation of device triggers.',
-      designSystem: {
-        colors: [
-          { hex: '#8B5CF6', name: 'Neon Purple' },
-          { hex: '#18181B', name: 'Midnight Charcoal' },
-          { hex: '#10B981', name: 'Active Mint' }
+    "id": "world-environment-day",
+    "title": "World Environment Day Event Identity",
+    "slug": "world-environment-day",
+    "category": "Branding",
+    "allCategories": [
+      "Branding",
+      "Art Direction",
+      "Graphic Design"
+    ],
+    "year": "2025",
+    "client": "A’Lime Impact Partnership",
+    "description": "Comprehensive event branding, environmental awareness collateral, and campaign art direction for World Environment Day.",
+    "services": [
+      "Brand Identity",
+      "Event Collateral",
+      "Art Direction",
+      "Exhibition Banners",
+      "Digital Campaign"
+    ],
+    "coverImage": "https://i.imgur.com/S6TKLDq.jpg",
+    "featured": true,
+    "caseStudy": {
+      "overview": "World Environment Day serves as a global rally for climate awareness and ecological preservation. We designed the complete visual identity and campaign collateral for A’Lime Impact Partnership’s marquee environmental celebration.",
+      "challenge": "Avoiding traditional green-washing aesthetic clichés while creating a celebratory, modern, and urgent environmental event brand that works seamlessly across stage backdrops, print collateral, and social media.",
+      "approach": "Combining organic nature-inspired motifs, high-energy neon greens, deep forest shadows, and bold contemporary typography. Every touchpoint—from physical roll-up banners to attendee badges and digital teasers—shared an unmistakable visual signature.",
+      "designSystem": {
+        "colors": [
+          {
+            "hex": "#064E3B",
+            "name": "Forest Shadow"
+          },
+          {
+            "hex": "#10B981",
+            "name": "Vibrant Emerald"
+          },
+          {
+            "hex": "#E0E7FF",
+            "name": "Sky Atmosphere"
+          },
+          {
+            "hex": "#FACC15",
+            "name": "Solar Yellow"
+          }
         ],
-        typography: {
-          fontName: 'Geist Sans Modern',
-          usage: 'Clean geometric sans-serif tuned for readability at night.'
+        "typography": {
+          "fontName": "Outfit Display & Inter",
+          "usage": "Bold, forward-looking headlines paired with crisp structural metadata."
         },
-        highlights: [
-          'Spatial Lighting Sliders',
-          'One-Tap Ambient Scenes',
-          'Hardware Status Radar'
+        "highlights": [
+          "Eco-Futurist Visual Motifs",
+          "On-Site Environmental Banners",
+          "Integrated Multichannel Collateral"
         ]
       },
-      outcome: 'Lume achieved 98% positive user rating across iOS App Store reviews with zero friction onboarding.',
-      gallery: [
+      "outcome": "The cohesive event branding unified all 20 touchpoints, delivering an unforgettable attendee experience and widespread digital amplification for the environmental campaign.",
+      "gallery": [
         {
-          src: '/projects/lume-cover.jpg',
-          caption: 'Dual-screen Smart Control & Device Management Interface',
-          layout: 'full'
+          "src": "https://i.imgur.com/S6TKLDq.jpg",
+          "caption": "Environment Day — Creative #01",
+          "layout": "half"
         },
         {
-          src: '/projects/aura-cover.jpg',
-          caption: 'Mobile app widget integration',
-          layout: 'full'
+          "src": "https://i.imgur.com/zP2nd9f.jpg",
+          "caption": "Environment Day — Creative #02",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/gColPkZ.jpg",
+          "caption": "Environment Day — Creative #03",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/o7zroAn.jpg",
+          "caption": "Environment Day — Creative #04",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/eRXTdlW.jpg",
+          "caption": "Environment Day — Creative #05",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/nImXImV.jpg",
+          "caption": "Environment Day — Creative #06",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/r7HBTOu.jpg",
+          "caption": "Environment Day — Creative #07",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/1S2DmWs.jpg",
+          "caption": "Environment Day — Creative #08",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/llqX6IA.jpg",
+          "caption": "Environment Day — Creative #09",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/E5sWop1.jpg",
+          "caption": "Environment Day — Creative #10",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/pBGnueA.jpg",
+          "caption": "Environment Day — Creative #11",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/HBj4kGp.jpg",
+          "caption": "Environment Day — Creative #12",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/fpB5vvr.jpg",
+          "caption": "Environment Day — Creative #13",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/r7XWrbF.jpg",
+          "caption": "Environment Day — Creative #14",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/j1SBacB.jpg",
+          "caption": "Environment Day — Creative #15",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/Cb6wq4d.jpg",
+          "caption": "Environment Day — Creative #16",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/EfNv6QC.jpg",
+          "caption": "Environment Day — Creative #17",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/MyG6wSA.jpg",
+          "caption": "Environment Day — Creative #18",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/iStbYPX.jpg",
+          "caption": "Environment Day — Creative #19",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/7nh9hQT.jpg",
+          "caption": "Environment Day — Creative #20",
+          "layout": "third"
         }
       ]
     }
   },
   {
-    id: 'vanta-studio',
-    title: 'Vanta Studio',
-    slug: 'vanta-studio',
-    category: 'Graphic Design',
-    allCategories: ['Graphic Design', 'Branding', 'Art Direction'],
-    year: '2025',
-    client: 'Vanta Contemporary Atelier',
-    description: 'Experimental typographic exhibition campaign, poster series, and visual identity for a modern art collective.',
-    services: ['Brand Identity', 'Graphic Design', 'Typography', 'Exhibition Posters'],
-    coverImage: '/projects/vanta-cover.jpg',
-    featured: true,
-    caseStudy: {
-      overview: 'Vanta Studio commissioned an uncompromising graphic campaign for their flagship modern design retrospective exhibition.',
-      challenge: 'Standing out in crowded urban art spaces with a graphic visual language that breaks traditional layout grids while maintaining readability.',
-      approach: 'Leveraging oversized sans-serif typography, asymmetric grid splits, high-contrast violet blocks, and brutalist editorial hierarchy.',
-      designSystem: {
-        colors: [
-          { hex: '#4C1D95', name: 'Vanta Purple' },
-          { hex: '#000000', name: 'Pure Void' },
-          { hex: '#FFFFFF', name: 'Stark White' }
+    "id": "beyond-the-pages",
+    "title": "Beyond the Pages Event Branding",
+    "slug": "beyond-the-pages",
+    "category": "Branding",
+    "allCategories": [
+      "Branding",
+      "Art Direction",
+      "Graphic Design"
+    ],
+    "year": "2024",
+    "client": "A’Lime Media Limited",
+    "description": "Experiential event identity, stage screen graphics, speaker announcements, and marketing collateral for the Beyond the Pages flagship conference.",
+    "services": [
+      "Event Identity",
+      "Art Direction",
+      "Keynote Visuals",
+      "Speaker Spotlights",
+      "Print Collateral"
+    ],
+    "coverImage": "https://i.imgur.com/lhkcIA7.jpg",
+    "featured": true,
+    "caseStudy": {
+      "overview": "Beyond the Pages is a signature thought-leadership conference hosted by A’Lime Media Limited exploring the evolution of literature, journalism, and creative media in the digital age.",
+      "challenge": "Bridging the timeless craftsmanship of the written page with the cutting-edge vibrancy of modern digital media, producing an identity that commands respect from senior speakers and attendees alike.",
+      "approach": "We developed a refined editorial brand aesthetic blending regal purple and indigo gradients, stylized typography, and sleek speaker showcase templates that built anticipation in the weeks leading up to the conference.",
+      "designSystem": {
+        "colors": [
+          {
+            "hex": "#3730A3",
+            "name": "Royal Indigo"
+          },
+          {
+            "hex": "#8B5CF6",
+            "name": "Luminous Violet"
+          },
+          {
+            "hex": "#F97316",
+            "name": "Radiant Tangerine"
+          },
+          {
+            "hex": "#0F172A",
+            "name": "Midnight Charcoal"
+          }
         ],
-        typography: {
-          fontName: 'Display Grotesk Ultra-Bold',
-          usage: 'Impactful display headers paired with micro technical metadata.'
+        "typography": {
+          "fontName": "Outfit Serif & Inter",
+          "usage": "Refined editorial serif titles combined with clean geometric grotesk for event details."
         },
-        highlights: [
-          'Oversized Urban Posters',
-          'Interactive AR Exhibition Guides',
-          'Limited Edition Catalogue'
+        "highlights": [
+          "Stage Keynote Systems",
+          "Speaker Spotlight Frameworks",
+          "Editorial Social Announcements"
         ]
       },
-      outcome: 'The exhibition broke attendance records with over 45,000 visitors across a three-week run.',
-      gallery: [
+      "outcome": "Successfully branded across 13 core promotional and on-site assets, positioning Beyond the Pages as a standout cultural and media forum with record registration numbers.",
+      "gallery": [
         {
-          src: '/projects/vanta-cover.jpg',
-          caption: 'Architectural wall poster mockup in gallery space',
-          layout: 'full'
+          "src": "https://i.imgur.com/lhkcIA7.jpg",
+          "caption": "Beyond the Pages — Creative #01",
+          "layout": "half"
         },
         {
-          src: '/projects/mono-cover.jpg',
-          caption: 'Exhibition series print poster variation',
-          layout: 'full'
-        }
-      ]
-    }
-  },
-  {
-    id: 'haven',
-    title: 'Haven',
-    slug: 'haven',
-    category: 'Web Design',
-    allCategories: ['Web Design', 'UI/UX'],
-    year: '2025',
-    client: 'Haven Estates & Living',
-    description: 'High-converting luxury architectural website experience showcasing bespoke residences with interactive 3D virtual walkthroughs.',
-    services: ['Web Design', 'UI/UX', 'Frontend Architecture', '3D Integration'],
-    coverImage: '/projects/haven-cover.jpg',
-    featured: true,
-    caseStudy: {
-      overview: 'Haven required a web platform as serene and beautifully proportioned as the architectural homes they sell.',
-      challenge: 'Presenting multi-million dollar architectural listings with expansive imagery while keeping web load times under 1 second.',
-      approach: 'We designed a minimal editorial desktop website layout with immersive image transition sequences, subtle scroll animations, and clean property metadata grids.',
-      designSystem: {
-        colors: [
-          { hex: '#6D28D9', name: 'Deep Iris' },
-          { hex: '#F3F4F6', name: 'Warm Cream' },
-          { hex: '#111827', name: 'Ink' }
-        ],
-        typography: {
-          fontName: 'Serif Modern & Sans',
-          usage: 'Balanced classical headlines with modern sans listings body.'
+          "src": "https://i.imgur.com/R2gb6fz.jpg",
+          "caption": "Beyond the Pages — Creative #02",
+          "layout": "third"
         },
-        highlights: [
-          'Fluid Canvas Transitions',
-          'Interactive Listing Filters',
-          'Curated Journal Layout'
-        ]
-      },
-      outcome: 'Increased qualified private buyer inquiries by 210% in the first quarter post-relaunch.',
-      gallery: [
         {
-          src: '/projects/haven-cover.jpg',
-          caption: 'Desktop Editorial Listing Interface on Studio Setup',
-          layout: 'full'
-        }
-      ]
-    }
-  },
-  {
-    id: 'mono',
-    title: 'Mono',
-    slug: 'mono',
-    category: 'Art Direction',
-    allCategories: ['Art Direction', 'Graphic Design', 'Social Media'],
-    year: '2024',
-    client: 'The Atelier Gallery',
-    description: 'High-fashion editorial campaign design, photography direction, and art gallery promotional materials.',
-    services: ['Campaign Design', 'Art Direction', 'Photography Styling', 'Social Media'],
-    coverImage: '/projects/mono-cover.jpg',
-    featured: true,
-    caseStudy: {
-      overview: 'Mono was a multi-platform visual campaign celebrating minimalist fashion and sculptural silhouettes.',
-      challenge: 'Creating a haunting, unforgettable visual atmosphere across digital displays, social media, and physical gallery prints.',
-      approach: 'Low-key studio lighting with violet ambient rim lights, dramatic silhouette portraiture, and refined serif typographic overlays.',
-      designSystem: {
-        colors: [
-          { hex: '#3B0764', name: 'Midnight Violet' },
-          { hex: '#09090B', name: 'Shadow Black' },
-          { hex: '#E9D5FF', name: 'Pale Lavender' }
-        ],
-        typography: {
-          fontName: 'High Fashion Serif',
-          usage: 'Spaced capital serif titles with romantic artistic feel.'
+          "src": "https://i.imgur.com/qGArZsj.jpg",
+          "caption": "Beyond the Pages — Creative #03",
+          "layout": "third"
         },
-        highlights: [
-          'Silhouette Portrait Series',
-          'Social Reel Motion Package',
-          'Gallery Exhibition Banners'
-        ]
-      },
-      outcome: 'Featured in top design blogs including Design Boom and Mindsparkle Mag.',
-      gallery: [
         {
-          src: '/projects/mono-cover.jpg',
-          caption: 'Exhibition hall framed campaign posters',
-          layout: 'full'
+          "src": "https://i.imgur.com/N8N8thU.jpg",
+          "caption": "Beyond the Pages — Creative #04",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/j87STaL.jpg",
+          "caption": "Beyond the Pages — Creative #05",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/BZpaX7O.jpg",
+          "caption": "Beyond the Pages — Creative #06",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/DN6s1SP.jpg",
+          "caption": "Beyond the Pages — Creative #07",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/g4rEAvA.jpg",
+          "caption": "Beyond the Pages — Creative #08",
+          "layout": "half"
+        },
+        {
+          "src": "https://i.imgur.com/DKUD3j2.jpg",
+          "caption": "Beyond the Pages — Creative #09",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/iNRfhTL.jpg",
+          "caption": "Beyond the Pages — Creative #10",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/GvMVLrG.jpg",
+          "caption": "Beyond the Pages — Creative #11",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/Dif3tQK.jpg",
+          "caption": "Beyond the Pages — Creative #12",
+          "layout": "third"
+        },
+        {
+          "src": "https://i.imgur.com/MtLQBS5.jpg",
+          "caption": "Beyond the Pages — Creative #13",
+          "layout": "third"
         }
       ]
     }
@@ -316,10 +754,8 @@ export const PROJECTS: Project[] = [
 
 export const CATEGORIES = [
   'All',
-  'UI/UX',
+  'Social Media',
   'Branding',
   'Graphic Design',
-  'Web Design',
-  'Art Direction',
-  'Social Media'
+  'Art Direction'
 ] as const;

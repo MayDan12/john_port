@@ -4,8 +4,8 @@ import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { ArrowUpRight, Search, Sparkles, Filter } from "lucide-react";
-import { PROJECTS, CATEGORIES } from "@/data/projects";
+import { ArrowUpRight, Search, Sparkles } from "lucide-react";
+import { PROJECTS } from "@/data/projects";
 import ProjectFilter from "@/components/ProjectFilter";
 
 export default function WorkArchivePage() {
@@ -25,12 +25,15 @@ export default function WorkArchivePage() {
   const filteredProjects = useMemo(() => {
     return PROJECTS.filter((project) => {
       const matchesCategory =
-        activeCategory === "All" || project.allCategories.includes(activeCategory);
+        activeCategory === "All" ||
+        project.allCategories.includes(activeCategory);
       const matchesSearch =
         searchQuery === "" ||
         project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        project.services.some((s) => s.toLowerCase().includes(searchQuery.toLowerCase()));
+        project.services.some((s) =>
+          s.toLowerCase().includes(searchQuery.toLowerCase()),
+        );
 
       return matchesCategory && matchesSearch;
     });
@@ -47,7 +50,8 @@ export default function WorkArchivePage() {
           Portfolio Archive
         </h1>
         <p className="text-base text-zinc-400 font-normal leading-relaxed">
-          An extensive collection of selected client works, brand identity systems, product interfaces, and experimental design explorations.
+          An extensive collection of selected client works, brand identity
+          systems, product interfaces, and experimental design explorations.
         </p>
       </div>
 
@@ -72,7 +76,10 @@ export default function WorkArchivePage() {
       </div>
 
       {/* Masonry / Editorial Project Grid */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div
+        layout
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, idx) => (
             <motion.div
@@ -98,10 +105,14 @@ export default function WorkArchivePage() {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 gap-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-white">{project.title}</span>
+                    <span className="text-lg font-bold text-white">
+                      {project.title}
+                    </span>
                     <ArrowUpRight className="w-5 h-5 text-purple-400" />
                   </div>
-                  <p className="text-xs text-zinc-300 line-clamp-2">{project.description}</p>
+                  <p className="text-xs text-zinc-300 line-clamp-2">
+                    {project.description}
+                  </p>
                 </div>
               </Link>
 
@@ -110,7 +121,9 @@ export default function WorkArchivePage() {
                   <span className="text-base font-bold text-white group-hover:text-purple-400 transition-colors">
                     {project.title}
                   </span>
-                  <span className="text-xs text-zinc-400">{project.category}</span>
+                  <span className="text-xs text-zinc-400">
+                    {project.category}
+                  </span>
                 </div>
                 <span className="text-xs font-mono text-purple-400 bg-purple-950/60 px-2.5 py-1 rounded-md border border-purple-800/40">
                   {project.year}
@@ -123,7 +136,9 @@ export default function WorkArchivePage() {
 
       {filteredProjects.length === 0 && (
         <div className="text-center py-24 flex flex-col items-center gap-3">
-          <p className="text-lg text-zinc-400 font-mono">No matching projects found.</p>
+          <p className="text-lg text-zinc-400 font-mono">
+            No matching projects found.
+          </p>
           <button
             onClick={() => {
               setActiveCategory("All");

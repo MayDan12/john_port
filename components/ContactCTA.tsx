@@ -15,7 +15,10 @@ export default function ContactCTA() {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <section
+      id="contact"
+      className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20"
+    >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +40,8 @@ export default function ContactCTA() {
           </h2>
 
           <p className="text-base sm:text-xl text-purple-100/80 max-w-xl font-normal leading-relaxed">
-            Let's create something meaningful, memorable, and beautifully designed for your brand.
+            Let&apos;s create something meaningful, memorable, and beautifully
+            designed for your brand.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-2 w-full sm:w-auto">
@@ -55,7 +59,11 @@ export default function ContactCTA() {
             >
               <Mail className="w-4 h-4" />
               <span>{copied ? "Email Copied!" : DESIGNER.contactEmail}</span>
-              {copied ? <Check className="w-4 h-4 text-green-300" /> : <Copy className="w-3.5 h-3.5 opacity-70" />}
+              {copied ? (
+                <Check className="w-4 h-4 text-green-300" />
+              ) : (
+                <Copy className="w-3.5 h-3.5 opacity-70" />
+              )}
             </button>
           </div>
 

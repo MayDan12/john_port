@@ -16,7 +16,7 @@ export default function Home() {
       <FeaturedWork />
       <ServicesSection />
       <ProcessSection />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <ContactCTA />
     </div>
   );

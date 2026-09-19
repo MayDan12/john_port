@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { PROJECTS, Project } from "@/data/projects";
+import { PROJECTS } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectFilter from "./ProjectFilter";
 
@@ -27,7 +27,10 @@ export default function FeaturedWork() {
   }, [activeCategory]);
 
   return (
-    <section id="work" className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <section
+      id="work"
+      className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20"
+    >
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <div className="flex flex-col gap-3">
@@ -38,7 +41,8 @@ export default function FeaturedWork() {
             Curated Design Showcase
           </h2>
           <p className="text-base text-zinc-600 dark:text-zinc-400 max-w-xl font-normal">
-            A collection of identities, interfaces, campaigns, and digital experiences created for ambitious brands.
+            A collection of identities, interfaces, campaigns, and digital
+            experiences created for ambitious brands.
           </p>
         </div>
 
@@ -61,7 +65,10 @@ export default function FeaturedWork() {
       </div>
 
       {/* Dynamic Animated Project Grid */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div
+        layout
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, idx) => (
             <motion.div
