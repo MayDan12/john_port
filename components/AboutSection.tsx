@@ -7,7 +7,10 @@ import { DESIGNER } from "@/data/designer";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <section
+      id="about"
+      className="py-24 px-4 sm:px-8 max-w-7xl mx-auto scroll-mt-20"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         {/* Left Column: Designer Portrait & Backdrop */}
         <motion.div
@@ -32,11 +35,15 @@ export default function AboutSection() {
           {/* Floating Experience Badge */}
           <div className="absolute -bottom-6 -right-2 sm:right-4 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-xl flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-purple-600/15 text-purple-600 dark:text-purple-400 flex items-center justify-center font-bold text-lg font-mono">
-              5+
+              6+
             </div>
             <div>
-              <p className="text-xs font-semibold text-zinc-950 dark:text-white">Years of Excellence</p>
-              <p className="text-[11px] text-zinc-500 font-mono">Global Clients & Studios</p>
+              <p className="text-xs font-semibold text-zinc-950 dark:text-white">
+                Years of Excellence
+              </p>
+              <p className="text-[11px] text-zinc-500 font-mono">
+                Global Clients & Studios
+              </p>
             </div>
           </div>
         </motion.div>

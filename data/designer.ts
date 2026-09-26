@@ -41,7 +41,7 @@ export const DESIGNER = {
   ],
   availability: "Available for select projects",
   portraitImage: "/john.jpg",
-  contactEmail: "john.odeniyi@gmail.com",
+  contactEmail: "odeniyijohn2931@gmail.com",
   location: "London, UK / Remote Worldwide",
   socials: [
     { name: "Behance", url: "https://behance.net", handle: "@johnodeniyi" },
@@ -56,7 +56,7 @@ export const DESIGNER = {
   stats: [
     {
       label: "Experience",
-      value: "5+ Years",
+      value: "6+ Years",
       description: "Crafting brand & digital experiences",
     },
     {
@@ -178,12 +178,13 @@ export const DESIGNER = {
     },
   ] as TestimonialItem[],
   clientLogos: [
-    "A’LIME MEDIA LIMITED",
-    "A’LIME IMPACT PARTNERSHIP",
-    "WORLD ENVIRONMENT DAY",
-    "BEYOND THE PAGES",
-    "IMPACT ADVOCACY INITIATIVE",
-    "SUSTAINABILITY MEDIA FORUM",
-    "CREATIVE DIALOGUES",
+    "REVIVAL GLOW",
+    "READICHARGE",
+    "GADGETINENTAL",
+    "FLY GADGETS",
+    "UC GADGETS",
+    "UC REALTY",
+    "Timers Restaurant",
+    "THE NIGERIAN NAVY",
   ],
 };

@@ -133,7 +133,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
           </div>
 
           {/* Design System Section */}
-          <div className="flex flex-col gap-8 p-8 sm:p-10 rounded-3xl bg-zinc-900/60 border border-zinc-800">
+          {/* <div className="flex flex-col gap-8 p-8 sm:p-10 rounded-3xl bg-zinc-900/60 border border-zinc-800">
             <div className="flex flex-col gap-2">
               <span className="text-xs font-mono text-purple-400 uppercase tracking-widest flex items-center gap-2">
                 <Palette className="w-4 h-4" /> Visual Identity Architecture
@@ -144,7 +144,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-              {/* Color Palette */}
+            
               <div className="md:col-span-6 flex flex-col gap-4">
                 <h4 className="text-xs font-mono text-zinc-400 uppercase">
                   Brand Color Palette
@@ -170,7 +170,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 </div>
               </div>
 
-              {/* Typography & Highlights */}
+            
               <div className="md:col-span-6 flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
                   <h4 className="text-xs font-mono text-zinc-400 uppercase flex items-center gap-2">
@@ -203,7 +203,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Project Gallery Showcase */}
           <CaseStudyGallery gallery={cs.gallery} projectTitle={project.title} />
