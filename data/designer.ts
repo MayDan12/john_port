@@ -44,14 +44,26 @@ export const DESIGNER = {
   contactEmail: "odeniyijohn2931@gmail.com",
   location: "London, UK / Remote Worldwide",
   socials: [
-    { name: "Behance", url: "https://behance.net", handle: "@johnodeniyi" },
-    { name: "Dribbble", url: "https://dribbble.net", handle: "@johnodeniyi" },
+    {
+      name: "Behance",
+      url: "https://behance.net/odeniyijohnto",
+      handle: "@odeniyijohnto",
+    },
+    {
+      name: "Dribbble",
+      url: "https://dribbble.net/odeniyijohnto",
+      handle: "@odeniyijohnto",
+    },
     {
       name: "Instagram",
-      url: "https://instagram.com",
-      handle: "@johnodeniyi.design",
+      url: "https://instagram.com/_fav_media",
+      handle: "@_fav_media",
     },
-    { name: "LinkedIn", url: "https://linkedin.com", handle: "john-odeniyi" },
+    {
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/odeniyi-john-tolulope-bb149322b",
+      handle: "john-odeniyi",
+    },
   ],
   stats: [
     {
