@@ -5,10 +5,6 @@ import {
   ArrowLeft,
   ArrowRight,
   Sparkles,
-  CheckCircle2,
-  Layers,
-  Palette,
-  Type,
 } from "lucide-react";
 import { PROJECTS } from "@/data/projects";
 import CaseStudyGallery from "@/components/CaseStudyGallery";
