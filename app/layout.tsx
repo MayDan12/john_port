@@ -4,8 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-// What hsduivshsndfisuediu
-
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
@@ -43,6 +41,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Wrap the entire application in a layout that includes the Navbar and Footer, and apply global styles and fonts.
   return (
     <html lang="en" className={`${outfit.variable} ${inter.variable} dark`}>
       <body className="min-h-screen flex flex-col bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-purple-600 selection:text-white">
