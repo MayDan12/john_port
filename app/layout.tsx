@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+// What hsduivshsndfisuediu
+
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
@@ -30,7 +32,8 @@ export const metadata: Metadata = {
   authors: [{ name: "John Odeniyi" }],
   openGraph: {
     title: "John Odeniyi — Graphics & UI/UX Designer",
-    description: "Designing brands and digital experiences that people remember.",
+    description:
+      "Designing brands and digital experiences that people remember.",
     type: "website",
   },
 };
