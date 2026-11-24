@@ -35,9 +35,9 @@ export const DESIGNER = {
     "I'm a multidisciplinary Graphics & UI/UX Designer creating bold visual identities, digital products, and experiences for ambitious brands.",
   aboutBioTitle: "Designer, problem solver, visual storyteller.",
   aboutBioParagraphs: [
-    "With over half a decade of hands-on experience across digital products, visual identities, and brand strategy, I craft thoughtful design systems that live at the intersection of aesthetics and functionality.",
-    "My work spans from early-stage startup branding to scaling complex enterprise UI/UX platforms. I believe design is not just how something looks, but how effortlessly it connects with people.",
-    "When I am not designing, I explore architectural photography, editorial typography, and physical print production.",
+    "6+ years of experience in graphics design, book layout design, video editing, and AI-generated visual content. Proficient in Adobe Photoshop, Illustrator, InDesign Premiere Pro, After effects, CapCut and CorelDraw, delivering print-ready and digital publications for authors and institutions.",
+    "Designed and formatted books, magazines, and programme booklets, including “Unlikely”, “Beating the Odds” (4th Edition), AWIM Magazine, and multiple Nigerian Navy publications and collaborator on the Nigerian Navy 70th Anniversary event Branding.",
+    "Produce brand video content and AI-generated imagery and video (Midjourney, Higgsfield, Runway) for client projects.",
   ],
   availability: "Available for select projects",
   portraitImage: "/john.jpg",

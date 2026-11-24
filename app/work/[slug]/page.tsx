@@ -1,11 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowLeft,
-  ArrowRight,
-  Sparkles,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, Sparkles } from "lucide-react";
 import { PROJECTS } from "@/data/projects";
 import CaseStudyGallery from "@/components/CaseStudyGallery";
 
@@ -96,7 +92,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       {cs ? (
         <>
           {/* Overview, Challenge, & Approach Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-y border-zinc-800">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-y border-zinc-800">
             <div className="flex flex-col gap-3">
               <span className="text-xs font-mono text-purple-400 uppercase tracking-widest flex items-center gap-2">
                 <Sparkles className="w-3.5 h-3.5" /> 01 / Overview
@@ -126,7 +122,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 {cs.approach}
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Design System Section */}
           {/* <div className="flex flex-col gap-8 p-8 sm:p-10 rounded-3xl bg-zinc-900/60 border border-zinc-800">
@@ -205,7 +201,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
           <CaseStudyGallery gallery={cs.gallery} projectTitle={project.title} />
 
           {/* Final Outcome */}
-          <div className="p-8 sm:p-10 rounded-3xl bg-purple-950/30 border border-purple-900/50 flex flex-col gap-4">
+          {/* <div className="p-8 sm:p-10 rounded-3xl bg-purple-950/30 border border-purple-900/50 flex flex-col gap-4">
             <span className="text-xs font-mono text-purple-400 uppercase tracking-widest">
               Impact & Results
             </span>
@@ -213,7 +209,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             <p className="text-base text-purple-200 leading-relaxed font-normal">
               {cs.outcome}
             </p>
-          </div>
+          </div> */}
         </>
       ) : null}
 
